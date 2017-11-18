@@ -1,0 +1,78 @@
+﻿<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"    
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">    
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>引用CSS文件</title>
+    <meta name="description" content="不超过150个字符">
+    <meta name="keywords" content="">
+    <meta name="author" content="name, email@gmail.com">
+
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- iOS 图标 -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+    <link rel="shortcut icon" href="path/to/favicon.ico">
+	<link rel="stylesheet" href="demo.css" type="text/css" />
+	
+</head>
+ 
+<body> 
+
+ <h1>这里是H1标签</h1>
+
+ <h2>目录</h2>
+	<p class="no-margin"><a href="#html-p01">html乱码原因与网页乱码解决方法</a></p>
+	<p class="no-margin"><a href="#html-p02">CSS主要参数</a></p>
+	<p class="no-margin"><a href="#html-p03">CSS主要参数</a></p>
+	<p class="no-margin"><a href="#html-p04">CSS主要参数</a></p>
+
+ <h2 id="html-p01">html乱码原因与网页乱码解决方法</h2>
+   
+ <p> <meta charste="utf-8"> 只是告诉浏览器要用utf-8来解释，而文档的编码，是在你保存时的选择决定的。</p>
+ <p> 如果保存ANSI 然后用utf-8解释，肯定是乱码。记事本的话，默认保存的文件格式是ANSI。所以在保存的时候要修改为uif-8。</p>
+ 
+ <hr>
+ 
+ <h2 id="html-p02">CSS主要参数</h2>
+ 
+ <p> 首行缩进两个汉字：text-indent：2em;   </p>
+ <p> 行间距：line-height：150%;</p>
+ <p> 字体加粗：font-weight: bold;</p>
+ 
+ <h4> 元素的内边距在边框和内容区之间: padding</h4>
+ <p>   控制该区域最简单的属性是 padding 属性。CSS padding 属性定义元素边框与元素内容之间的空白区域。</p>
+	<ul type="square">
+		<li>如果您希望所有 h1 元素的各边都有 10 像素的内边距，只需要这样：padding: 10px;</li>
+		<li>您还可以按照上、右、下、左的顺序分别设置各边的内边距，各边均可以使用不同的单位或百分比值：padding: 10px 0.25em 2ex 20%;</li>
+		<li>也通过使用下面四个单独的属性，分别设置上、右、下、左内边距： padding-top: 10px;padding-right: 0.25em;padding-bottom: 2ex;padding-left: 20%;</li>
+    </ul>  
+	<h4>内边距的百分比数值</h4>
+	<ul type="square">
+		<li>可以为元素的内边距设置百分数值。百分数值是相对于其父元素的 width 计算的，这一点与外边距一样。所以，如果父元素的 width 改变，它们也会改变：padding: 10%;</li>
+		<li>如果一个段落的父元素是 div 元素，那么它的内边距要根据 div 的 width 计算。
+		<li>注意：上下内边距与左右内边距一致；即上下内边距的百分数会相对于父元素宽度设置，而不是相对于高度。</li>
+    </ul> 
+	
+	<h4> 围绕在元素边框的空白区域是外边距: margin</h4>
+    <p>   设置外边距会在元素外创建额外的“空白”。
+			 设置外边距的最简单的方法就是使用 margin 属性，这个属性接受任何长度单位、百分数值甚至负值。</p>
+	<ul type="square">
+		<li>margin 属性接受任何长度单位，可以是像素、英寸、毫米或 em。margin 可以设置为 auto。更常见的做法是为外边距设置长度值。</li>
+		<li>与内边距的设置相同，这些值的顺序是从上外边距 (top) 开始围着元素顺时针旋转的：margin: top right bottom left</li>
+		<li>margin 的默认值是 0，所以如果没有为 margin 声明一个值，就不会出现外边距。但是，在实际中，浏览器对许多元素已经提供了预定的样式，外边距也不例外。例如，在支持 CSS 的浏览器中，外边距会在每个段落元素的上面和下面生成“空行”。因此，如果没有为 p 元素声明外边距，浏览器可能会自己应用一个外边距。当然，只要你特别作了声明，就会覆盖默认样式。</li>
+    </ul>  		
+	
+	 <h2 id="html-p03">图片处理</h2>
+	<div class="big-image"><img src=".。/images/demo1.png" alt="图片缺失时显示" title="鼠标放上去效果"></div>
+    <div class="big-image"><img src="./images/photo-1.original.jpg" alt="图片缺失时显示"   title="鼠标放上去效果"> </div>
+	
+	<p align="center"><a href="file:///F:/zeng/06%20Html/demo.html" target="_blank">这是一个链接</a></p>
+	
+</body> 
+   
+</html>    

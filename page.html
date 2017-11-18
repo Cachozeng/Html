@@ -1,0 +1,172 @@
+﻿<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"    
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">    
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>引用CSS文件</title>
+    <meta name="description" content="不超过150个字符">
+    <meta name="keywords" content="">
+    <meta name="author" content="name, email@gmail.com">
+
+    <!-- 为移动设备添加 viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- iOS 图标 -->
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-57x57-precomposed.png">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/rss.xml" />
+    <link rel="shortcut icon" href="path/to/favicon.ico">
+	<link rel="stylesheet" href="demo.css" type="text/css" />
+	
+</head>
+ 
+<body> 
+   
+  <div class="jumbotron text-center">
+    <div class="container-fluid">
+        <h1 class="home-hero-title white" >Let’s build what’s next. Together.</h1>
+        <p class="home-hero-text white">Tangelo is a <span class="bold-text">Venture Studio</span> that accelerates business growth for mid-sized companies and an <span class="bold-text">Innovation Lab</span> that helps mid-sized companies digitally transform.</p>
+    </div>
+  </div>
+  <div class="hero-filter home-page"></div>
+  <div class="arrow-container">
+    <div class="arrow bounce">
+      <a href="#intro-message" data-scroll data-options='{"easing": "easeOutQuart", "offset": 80}'
+><img width="40" height="40" alt="" src="{% static 'img/arrow.svg' %}" /></a>
+    </div>
+
+  </div>
+</section>
+
+<section id="intro-message">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="team-section-title section-title our-work what-we-do hideme">What We Do</h2>
+      </div>
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0 text-center sr-time sr-time-1">
+        <p class="home-intro p-large sr-time sr-time-1">Through our highly efficient, one-stop-shop and vertically integrated business model, we work with successful mid-sized companies who have the potential to grow digitally. Our specialized teams, a mix of highly experienced talent in business strategy, product design, digital marketing and deep technology are your strongest assets in accelerating digital transformations. Whether part of our Venture Studio or our Innovation Lab, we create opportunities aimed at increasing your company's valuation through our commitment to <span class="bold-text">Build What's Next. Together.</span> — our approach to <span class="bold-text">planning, implementing and growing</span> novel, disruptive and agile digital transformations.</p>
+        <a href="{% pageurl services_page %}" class="our-expertise-btn pink-button sr-time sr-time-1">OUR EXPERTISE</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="card-intro-message">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center info">
+        <h2 class="section-title our-work hideme">Who We Are</h2>
+        <p>Discover how we leverage our three core values to accelerate business growth.</p>
+      </div>
+      <div class="col-xs-12 text-center">
+        <div class="row">
+
+          <div class="card-intro-item-diversity card-intro-item col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-md-2">
+              <img class="card-intro-item-img" src="{% static '/img/home/diversity.svg'%}" alt=""/>
+            </div>
+            <article class="col-xs-12 col-sm-9 col-md-10">
+              <h2>Diversity</h2>
+              <h3>Unique breadth of talent</h3>
+              <p>Our culture of multi-facet diversity allows us to generate different work environments and varied experiences to create a unique formula that really works. Being inclusive in so many parameters enables us to offer a unique breadth of talent and solutions that homogenous teams are unable to provide. </p>
+              <a href="{% pageurl team_page %}">
+                MEET OUR TEAM
+                <span class="shake-arrow">
+                  <img class="card-read-more" alt="" src="{% static '/img/arrow.png'%}">
+                </span>
+              </a>
+            </article>
+          </div>
+          <div class="card-intro-item col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-md-2">
+              <img class="card-intro-item-img" src="{% static '/img/home/transparency.svg'%}" alt=""/>
+            </div>
+            <article class="col-xs-12 col-sm-9 col-md-10">
+              <h2>Transparency</h2>
+              <h3>Strong bonds with our partners</h3>
+              <p>Our straight-shooter mindset enables us to provide our partners with honest, valuable guidance, while pushing the boundaries of innovation. We are fully immersed in our partner’s business cycles. We don’t just tell you what you want to hear, we tell you what's best for your company.</p>
+            </article>
+          </div>
+          <div class="card-intro-item col-xs-12 col-sm-10 col-sm-offset-1 col-lg-12 col-lg-offset-0">
+            <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-0 col-md-2">
+              <img class="card-intro-item-img" src="{% static '/img/home/innovation.svg'%}" alt=""/>
+            </div>
+            <article class="col-xs-12 col-sm-9 col-md-10">
+              <h2>Innovation</h2>
+              <h3>Strategic, research-based solutions</h3>
+              <p>The culmination of our diversity and transparency lends us to think outside of the box. Backed soundly by data, our unconventional solutions are the future trends that others eventually follow. </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="orange-bar story-orange">
+  <div class="text-center">
+    <h2 class="section-title p-large white">The Story of Tangelo</h2>
+    <p class="p-medium white">Let’s build what’s next. Together.</p>
+    <a href="/approach" class="white-button">OUR APPROACH</a>
+  </div>
+</section>
+
+
+<section class="blog-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="section-title our-insight hideme">Our Insights</h2>
+        <p class="our-insight-intro secondgray">Accelerate your results.</p>
+      </div>
+    </div>
+    <div class="row">
+      {% for post in blogpages %}
+        {% with post=post.specific %}
+        <a href="{% pageurl post %}">
+          <div class="blog-list-item col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 text-center">
+            <div class="thumbnail">
+             <!-- {% with post.main_image as main_image %}
+                 {% if main_image %}{% image main_image original %}{% endif %}
+             {% endwith %} -->
+              {% image post.main_image original  as tmp_photo%}
+             <div class="blog-item-img" style="background-image:url({{ tmp_photo.url }})"></div>
+              <div class="caption">
+                <p class="blog-type">{{ post.categorys }}</p>
+                <p class="blog-title">{{ post.title }}</p>
+                <p class="blog-date">{{ post.date }}</p>
+              </div>
+            </div>
+          </div>
+        </a>
+        {% endwith %}
+      {% endfor %}
+    </div>
+  </div>
+  <div class="view-all-posts text-center">
+    <a href="/insights" class="pink-button sr-time sr-time-1">VIEW ALL POSTS</a>
+  </div>
+</section>
+
+<section id="press">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 text-center">
+        <h2 class="press-section-title section-title hideme">Our Partners</h2>
+      </div>
+    </div>
+    <div class="row press-companies hideme">
+      <div class="press-companies-item col-xs-5 col-xs-offset-1 col-md-3 col-md-offset-0"><a href="https://www.googleforentrepreneurs.com/" target="_blank"><img class="press-companies-img-google press-companies-img" src="{% static 'img/home/google.svg' %}" alt="google"/></a></div>
+      <div class="press-companies-item col-xs-5 col-md-3"><a href="https://www.facebook.com/" target="_blank"><img class="press-companies-img-facebook press-companies-img" src="{% static 'img/home/facebook.svg' %}" alt="facebook"/></a></div>
+      <div class="press-companies-item col-xs-5 col-xs-offset-1 col-md-3 col-sm-offset-0"><a href="https://www.intel.com/" target="_blank"><img class="press-companies-img-intel press-companies-img" src="{% static 'img/home/intel.svg' %}" alt="intel"/></a></div>
+      <div class="press-companies-item col-xs-5 col-md-3"><a href="https://www.intuit.com/" target="_blank"><img class="press-companies-img-in press-companies-img" src="{% static 'img/home/in.svg' %}" alt="in"/></a></div>
+      <!--<div class="img-wrapper"><a href="http://blog.interesante.com/post/50515533817/interesante-google-io" target="_blank"><img src="{% static 'img/press/press-04.svg' %}" width="127" /></a></div>-->
+    </div>
+
+</section>
+ 
+</body> 
+   
+</html>    

@@ -1,0 +1,912 @@
+#page-hero {
+  &.home {
+    background-image: url(../img/home/home-hero.jpg);
+    background-attachment: fixed;
+    @media (max-width: $screen-sm-max) {
+      &:before {
+        background-image: url(../img/home/home-hero.jpg);
+        background-size: auto 100%;
+      }
+    }
+    @media (max-width: $screen-xs-max) {
+      &:before {
+        background-position: center left 27%;
+      }
+    }
+    .jumbotron{
+        top: 54%;
+        .container-fluid {
+          @media (min-width: $screen-md-min) {
+            width: 60%;
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
+    }
+  .home-hero-title {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+  }
+  p {
+    font-size: 16px;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 24px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+        padding-left: 13%;
+        padding-right: 13%;
+        line-height: 24px;
+        font-size: 20px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+        padding-left: 14%;
+        padding-right: 14%;
+        line-height: 28px;
+        font-size: 21px;
+    }
+    @media (min-width: $screen-xl-min) {
+        padding-left: 17%;
+        padding-right: 17%;
+        font-size: 30px;
+    }
+  }
+}
+  .jumbotron {
+    width: 100%;
+  }
+}
+.home-intro {
+  color: #565a5c;
+  line-height: 41px;
+  @media (max-width: $screen-xs-max){
+      line-height: 22px;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+      line-height: 29px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max){
+      font-size: 23px;
+  }
+  @media (min-width: $screen-xl-min) {
+      font-size: 30px;
+      line-height: 48px;
+  }
+}
+
+.what-we-do.section-title {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-top: 70px;
+    margin-bottom: 47px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    margin-top: 64px;
+    margin-bottom: 45px;
+  }
+  @media (min-width: $screen-xl-min) {
+    margin-top: 85px;
+    margin-bottom: 60px;
+  }
+}
+.our-expertise-btn {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+    margin-top: 20px;
+  }
+}
+
+.card-intro-item {
+  margin-bottom: 30px;
+  text-align: center;
+  @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+    margin-top: 30px;
+  }
+  @media (min-width: $screen-xs-max) {
+    text-align: left;
+  }
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 5px;
+  }
+  &>div {
+    text-align: center;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 20px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      text-align: left;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    color: #565a5c;
+    font-size: 22px;
+    @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+      font-size: 30px;
+    }
+    @media (min-width: $screen-md-max) {
+      font-size: 36px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      font-size: 27px;
+    }
+    @media (min-width: $screen-lg-max) {
+      font-size: 36px;
+    }
+  }
+  h3 {
+    color: #565a5c;
+    font-weight: 300;
+    font-size: 16px;
+    @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+      font-size: 20px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      font-size: 18px;
+    }
+    @media (min-width: $screen-lg-max) {
+      font-size: 24px;
+    }
+    @media (max-width: $screen-md-max) {
+      margin-bottom: 12px;
+    }
+  }
+  p {
+    margin-bottom: 0;
+    font-size: 16px;
+    color: #565a5c;
+    @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+      font-size: 18px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      font-size: 16px;
+      line-height: 24px;
+    }
+    @media (min-width: $screen-lg-max) {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+  a {
+    margin-top: 15px;
+    color: #ef4e3f;
+    font-size: 16px;
+    font-family: Poppins;
+    font-weight: 600;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 21px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      font-size: 15px;
+    }
+    @media (min-width: $screen-lg-max) {
+      font-size: 21px;
+    }
+  }
+  .card-read-more {
+    vertical-align: top;
+    margin-top: 10px;
+    margin-left: 20px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      margin-top: 7px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      margin-top: 10px;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin-top: 6px;
+    }
+  }
+}
+
+.story-orange {
+  padding: 90px 0;
+  margin-bottom: 95px;
+  height: auto;
+  @media (max-width: $screen-xs-max) {
+    padding-top: 55px;
+    padding-bottom: 92px;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-bottom: 35px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    padding: 114px 0 99px;
+    margin-bottom: 72px;
+  }
+  @media (min-width: $screen-md-min) {
+    box-shadow: 0 5px 10px 0 rgba(164, 169, 177, 0.5);
+  }
+  p {
+    margin-top: 54px;
+    margin-bottom: 45px;
+    font-size: 16px;
+    @media (max-width: $screen-xs-max) {
+      line-height: 21px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      margin-top: 30px;
+      margin-bottom: 70px;
+      font-size: 18px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      margin-top: 30px;
+      margin-bottom: 60px;
+      font-size: 23px;
+    }
+    @media (min-width: $screen-lg-max) {
+      margin-top: 40px;
+      margin-bottom: 80px;
+      font-size: 30px;
+    }
+  }
+  &:after {
+    content: '';
+    clear: both;
+  }
+}
+
+.our-insight {
+  margin-bottom: 33px;
+  @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+    margin-bottom: 43px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    margin-bottom: 41px;
+  }
+  @media (min-width: $screen-xl-min) {
+    margin-bottom: 54px;
+  }
+}
+
+.our-insight-intro {
+  margin-bottom: 23px;
+  @media (min-width: $screen-xs-max) and (max-width: $screen-md-max) {
+    margin-bottom: 42px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    margin-bottom: 45px;
+  }
+  @media (min-width: $screen-xl-min) {
+    margin-bottom: 60px;
+  }
+}
+
+.blog-section {
+  .container {
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      width: 80%;
+    }
+  }
+}
+
+.view-all-posts {
+  margin-top: 65px;
+  margin-bottom: 84px;
+  @media (min-width: $screen-xl-min) {
+    margin-top: 97px;
+    margin-bottom: 110px;
+  }
+  @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+    margin-top: 73px;
+    margin-bottom: 83px;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-top: 13px;
+    margin-bottom: 47px;
+  }
+}
+
+.work-box {
+  margin-bottom: 17px;
+  position: relative;
+  z-index: 1;
+  .work-details-box {
+    position: absolute;
+    width: 80%;
+    opacity: 0;
+    @include transition(all 0.5s ease-in-out);
+    @media (max-width: $screen-sm-max) {
+      opacity: 1;
+    }
+    @media (max-width: $screen-xs-max) {
+      padding-left: 18px;
+    }
+    @media (min-width: $screen-sm-min) {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h3 {
+      margin: 0;
+    }
+    .p-small {
+      font-size: 1.5rem;
+      margin-bottom: 0;
+
+
+        @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 2rem;
+        line-height: 1.5;
+         
+    }
+        @media (max-width: $screen-sm-min) {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 20px; 
+        
+}  
+    }
+    @media (max-width: $screen-xs-max) {
+      opacity: 1;
+    }
+
+  }
+  @media (min-width: $screen-md-min) {
+    &:hover {
+      .work-details-box {
+        opacity: 1;
+      }
+      .dreamers {
+        transform: scale(0.96);
+        opacity: 0.25;
+      }
+      .intel {
+        transform: scale(0.96);
+        top: -50px;
+        opacity: 0.25;
+      }
+      .intuit {
+        transform: translate(-13px, 7px) scale(0.96);
+        opacity: 0.25;
+//        top: -28px;
+//        left: -13px;
+      }
+      .kapture {
+        transform: scale(0.96);
+        opacity: 0.25;
+      }
+      .interesante {
+        transform: scale(0.96);
+        opacity: 0.25;
+      }
+      .onecord {
+        transform: scale(0.96);
+        opacity: 0.25;
+      }
+    }
+  }
+  &.no-margin {
+    @media (min-width: $screen-sm-min) {
+      margin-left: -15px;
+    }
+  }
+  &.kapture-box {
+    background-color: $orange;
+    height: 496px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 340px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      height: 335px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 372px;
+    }
+  }
+  &.intel-box {
+    background-color: #545c71;
+    height: 328px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 220px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      height: 222px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 246px;
+    }
+  }
+  &.intuit-box {
+    background-color: #4295DA;
+    height: 328px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+      background-color: #1f84db;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 220px;
+      background-color: #0071de;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      height: 222px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 246px;
+    }
+  }
+  &.interesante-box {
+    background-color: #53aace;
+    height: 394px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 304px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      height: 267px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 296px;
+    }
+  }
+  &.onecord-box {
+    background-color: #ffbe4f;
+    height: 394px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 304px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      height: 267px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 296px;
+    }
+  }
+  &.dreamers-box {
+    background-color: #5392a6;
+    height: 524px;
+    @media (max-width: $screen-xs-max) {
+      height: 320px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 304px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      height: 354px;
+    }
+    @media (min-width: $screen-lg-min) and (max-width: $screen-lg-max) {
+      height: 393px;
+    }
+  }
+}
+.casestudy-title {
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 15px;
+  }
+}
+.casestudy-kapture-title {
+  @media (max-width: $screen-xs-max) {
+    margin-top: 34px;
+  }
+}
+.casestudy-intuit-title {
+  @media (max-width: $screen-xs-max) {
+    margin-top: 34px;
+  }
+}
+.casestudy-interesante-title {
+  @media (max-width: $screen-xs-max) {
+    margin-top: 40px;
+  }
+}
+.casestudy-dreamer-title {
+  @media (max-width: $screen-xs-max) {
+    margin-top: 20px;
+  }
+}
+.casestudy-onecord-title {
+  @media (max-width: $screen-xs-max) {
+    margin-top: 15px;
+  }
+}
+.casestudy-image {
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -100;
+
+  @include transition(all 0.5s ease-in-out);
+  @media (max-width: $screen-sm-max) {
+    @include transition(none);
+  }
+  @media (max-width: $screen-xs-max) {
+    opacity: 0.25;
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    opacity: .28;
+  }
+  &.kapture {
+    width: 520px;
+    height: 516px;
+    margin-left: -60px;
+    background: url(../img/kapture-casestudy.png) no-repeat center;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: 272px;
+      height: 277px;
+      margin-top: 28px;
+      margin-left: 20px;
+      background-size: 100%;
+    }
+    @media (max-width: $screen-xs-max) {
+      height: 360px;
+      margin-top: 0px;
+      margin-left: 0px;
+      width: 300px;
+      height: 300px;
+      background: url(../img/kapture-casestudy.png) no-repeat left 4px top 18px;
+      background-size: 260px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      width: 100%;
+      background-size: 100%;
+      height: 387px;
+    }
+    @media (min-width: $screen-xl-min) and (max-width: 1600px) {
+      width: 100%;
+      background-size: 100%;
+      height: 425px;
+    }
+  }
+  &.intel {
+    width: 100%;
+    height: 379px;
+    background: url(../img/intel-casestudy.png);
+    right: -100px;
+    top: -60px;
+    @media (max-width: $screen-xs-max) {
+      width: 120%;
+      right: -90px;
+      top: 40px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      right: -60px;
+      top: -20px;
+      width: 375px;
+      height: 219px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      right: -80px;
+      top: -40px;
+      height: 285px;
+    }
+    @media (min-width: $screen-xl-min) and (max-width: 1600px) {
+      right: -80px;
+      top: -40px;
+      height: 313px;
+    }
+  }
+  &.intuit {
+    width: 100%;
+    height: 379px;
+    background: url(../img/intuit-case-study.png) no-repeat bottom left;
+    bottom: 0;
+    @media (max-width: $screen-xs-max) {
+      width: 300px;
+      height: 300px;
+      background-size: 100%;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: 341px;
+      height: 187px;
+      background-size: 100%;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      height: 285px;
+      background-size: 80%;
+    }
+    @media (min-width: $screen-xl-min) and (max-width: 1600px) {
+      height: 313px;
+      background-size: 100%;
+    }
+  }
+
+  &.interesante {
+    width: 100%;
+    max-width: 660px;
+    height: 440px;
+    background: url(../img/interesante-casestudy.png) no-repeat top center;
+    background-size: 100%;
+    right: -130px;
+    top: 27px;
+    @media (max-width: $screen-xs-max) {
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background: url(../img/interesante-casestudy.png) no-repeat left 5px top 70px;
+      background-size: 275px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      left: -6px;
+      top: 35px;
+      width: 100%;
+      height: 215px;
+      background: url(../img/interesante-casestudy.png) no-repeat center;
+      background-size: 95%;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      right: -100px;
+      top: 35px;
+      width: 100%;
+      height: 330px;
+      background-size: 100%;
+    }
+    @media (min-width: $screen-xl-min) and (max-width: 1600px) {
+      right: -100px;
+      top: 35px;
+      width: 100%;
+      height: 363x;
+      background-size: 100%;
+    }
+  }
+  &.onecord {
+    width: 400px;
+    height: 460px;
+    left: 140px;
+    top: 27px;
+    background-image: url(../img/onecord-casestudy.png);
+    @media (max-width: $screen-xs-max) {
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      background: url(../img/onecord-casestudy.png) no-repeat left 86px top 30px;
+      background-size: 188px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      top: 40px;
+      left: 102px;      
+      width: 219px;
+      height: 258px;
+      opacity: .41;
+      background-size: 100%;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      width: 359px;
+      height: 345px;
+      left: 140px;
+      top: 27px;
+    }
+  }
+  &.dreamers {
+    width: 400px;
+    height: 531px;
+    left: -60px;
+    top: 50px;
+    background-image: url(../img/dreamers-casestudy.png);
+    @media (max-width: $screen-xs-max) {
+      top: 0;
+      left: 0;
+      width: 300px;
+      height: 300px;
+      background: url(../img/dreamers-casestudy.png) no-repeat left 29px top 28px;
+      background-size: 187px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      height: 290px;
+      width: 217px;
+      top: 33px;
+      left: 31px; 
+      background-size: 100%;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      width: 100%;
+      height: 399px;
+    }
+    @media (min-width: $screen-xl-min) and (max-width: 1600px) {
+      width: 100%;
+      height: 439px;
+    }
+  }
+}
+
+.more-work-btn-container {
+  margin-top: 55px;
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-top: 40px;
+  }
+}
+.press-section-title {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    margin-bottom: 33px;
+  }
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 20px;
+  }
+
+}
+.press-row {
+  margin-top: 50px;
+
+}
+
+.press-companies {
+  text-align: center;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+
+  :hover {
+    opacity: 0.85;
+  }
+  @media (max-width: $screen-xs-max) {
+    margin-bottom: 40px; 
+  }
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+    text-align: center;
+  }
+
+  .press-companies-item {
+    margin-bottom: 15px;
+    @media (max-width: $screen-xs-max) {
+      &:nth-child(2n) {
+        clear: right;
+      }
+      &:nth-child(2n+1) {
+        clear: left;
+      }
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: auto;
+      margin-left: 75px;
+      padding: 0;
+      height: 52px;
+    }
+    .press-companies-img-google {
+      width: 158px;
+      margin-top: 12px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+        width: 119px;
+        margin-top: 9px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 108px;
+        margin-top: 2px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 80px;
+        margin-top: 2px;
+      }
+    }
+    .press-companies-img-facebook {
+      width: 171px;
+      margin-top: 14px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+        width: 129px;
+        margin-top: 10px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 120px;
+        margin-top:14px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 96px;
+        margin-top: 2px;
+      }
+    }
+    .press-companies-img-intel {
+      width: 111px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+        width: 84px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 77px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 63px;
+        margin-top: 2px;
+      }
+    }
+    .press-companies-img-in {
+      width: 124px;
+      margin-top: 15px;
+      @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+        width: 93px;
+        margin-top: 12px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        width: 101px;
+        margin-top: 11px;
+      }
+      @media (max-width: $screen-xs-max) {
+        width: 73px;
+        margin-top: 2px;
+      }
+    }
+
+  }
+
+
+  .press-companies-img {
+    @media (max-width: $screen-xs-max) {
+      max-width: 100%;
+      height: 36px;
+    }
+  }
+
+  .img-wrapper {
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+
+
+}
+
+.home-gallery {
+  &.photo-gallery {
+    .photo-item {
+      &.image-top-left {
+        background-image: url(../img/home/image2.png);
+      }
+      &.image-top-right {
+        background-image: url(../img/home/image3.png);
+      }
+      &.image-bottom-left {
+        background-image: url(../img/home/image4.png);
+      }
+      &.image-bottom-right {
+        background-image: url(../img/home/image5.png);
+      }
+    }
+  }
+}
+
+#card-intro-message {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { 
+    margin-bottom: 125px;
+    .section-title {
+        margin-top: 10px;
+        margin-bottom: 33px;
+        & + p {
+          margin-bottom: 65px;
+        }
+    }
+  }
+  .card-intro-item-diversity p{
+    margin-bottom: 20px;
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      margin-bottom: 15px;
+    }
+  }
+  .card-intro-item-img {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-md-max) { 
+      margin-left: -20px;
+    }
+    @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+      width: 98px;
+    }
+  }
+  .info {
+    p {
+      color: #565a5c;
+      @media (min-width: $screen-sm-max) {
+        &:last-child {
+          margin-bottom: 110px;
+          @media (min-width: $screen-md-min) and (max-width: $screen-lg-max) {
+            margin-bottom: 83px;
+          }
+        }
+      }
+    }
+  }
+}
