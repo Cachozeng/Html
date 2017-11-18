@@ -1,9 +1,0 @@
-@echo off
-
-d:
-cd D:\tomcat\webapps\jenkins
-java -jar jenkins-cli.jar -s http://localhost:8090/jenkins/ help
-
-ren java -jar jenkins-cli.jar -s http://localhost:8090/jenkins/ restart
-
-pasue
